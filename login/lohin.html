@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #eaf3e5;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+}
+
+
+.login-box {
+
+    width: 350px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px gray;
+
+    text-align: center;
+}
+
+
+h2 {
+    color: #28633a;
+}
+
+
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 7px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    box-sizing: border-box;
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2e7541;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #205b31;
+}
+
+
+a {
+    color: #2e7541;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+#message {
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+</style>
+
+<body>
+
+    <div class="login-box">
+
+        <h2>🌿 TribalHerb Login</h2>
+
+        <p>Welcome back!</p>
+
+        <form id="loginForm">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            Don't have an account?
+            <a href="registration.html">Register</a>
+        </p>
+
+    </div>
+
+    <script >
+        document.getElementById("loginForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let email =
+        document.getElementById("email").value;
+
+    let password =
+        document.getElementById("password").value;
+
+
+    if (email === "admin@gmail.com" &&
+        password === "12345") {
+
+        document.getElementById("message")
+        .innerText = "✅ Login Successful!";
+
+        document.getElementById("message")
+        .style.color = "green";
+
+    }
+
+    else {
+
+        document.getElementById("message")
+        .innerText = "❌ Invalid Email or Password";
+
+        document.getElementById("message")
+        .style.color = "red";
+
+    }
+
+});
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TribalHerb - Home</title>
+<link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+    
+
+  
+
+</div>
+<header class="navbar">
+  <a class="brand" href="index.html">
+    <div class="logo-mark">🌿</div>
+    <div><h1>Tribal<span>Herb</span></h1><small>Nature • Tribal • Ayurveda</small></div>
+  </a>
+  <nav class="navlinks">
+    <a class="active" href="/index/index.html">Home</a><a class="" href="/plants/plants.html">Plants</a><a class="" href="/tribal/tribal.html">Tribal Areas</a><a class="" href="/products/products.html">Products</a><a class="" href="/apiData/api.html">API Data</a><a class="" href="/aboutpages/about.html">About</a></nav>
+  <div class="top-search">⌕<input id="siteSearch" placeholder="Search plants, uses, or locations..."></div>
+  <a class="login-btn" href="/registrationfiles/registration.html" >👤 Registration</a>
+  <a class="login-btn" href="/login/lohin.html" >👤 Login</a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <h2>
+      Discover<br>
+      <span>Ayurvedic Plants</span>
+    </h2>
+
+    <h3>from Araku, Chintapalli & Paderu</h3>
+
+    <p>
+      Explore the rich medicinal plant heritage of Araku,
+      Chintapalli and Paderu tribal regions. Know their uses,
+      benefits, images, and local availability using verified data
+      and open APIs.
+    </p>
+
+    <div class="container">
+
+      <h1>🌿 Plant Explorer</h1>
+
+      <!-- Search -->
+      <div class="search-box">
+        <input
+          type="text"
+          id="plantInput"
+          placeholder="Enter plant name e.g. Neem"
+        >
+
+        <button onclick="searchPlant()">
+          Search
+        </button>
+      </div>
+
+      <!-- 👇 Information appears below search -->
+      <div id="result"></div>
+<!-- Static Plant Information -->
+<div id="result">
+
+  <!-- Neem -->
+  <div class="card">
+    <img src="https://www.globalgiving.org/pfil/64813/ph_64813_285349.jpg" alt="Neem Plant">
+
+    <h2>🌿 Neem</h2>
+    <p><strong>Scientific Name:</strong> Azadirachta indica</p>
+    <p><strong>Family:</strong> Meliaceae</p>
+    <p><strong>Uses:</strong> Traditionally used in herbal and Ayurvedic practices.</p>
+    <p><strong>Region:</strong> Araku, Chintapalli & Paderu</p>
+  </div>
+
+  <!-- Turmeric -->
+  <div class="card">
+    <img src="https://organicmandya.com/cdn/shop/articles/0d7fb68c-6f15-410b-9c09-61b666ac5928_c9e63db6-8d85-4f0e-89e9-f1f8db4b9190.jpg?v=1787220083&width=1200" alt="Turmeric">
+
+    <h2>🌱 Turmeric</h2>
+    <p><strong>Scientific Name:</strong> Curcuma longa</p>
+    <p><strong>Family:</strong> Zingiberaceae</p>
+    <p><strong>Uses:</strong> Commonly used as a spice and in traditional Ayurveda.</p>
+    <p><strong>Part Used:</strong> Rhizome</p>
+  </div>
+
+  <!-- Tulsi -->
+  <div class="card">
+    <img src="https://rukminim3.flixcart.com/image/480/640/kpzt7680/plant-sapling/h/o/d/tulsi-plant-standard-seedling-1-green-era-original-imag43rzusxsqbas.jpeg?q=90" alt="Tulsi Plant">
+
+    <h2>🌿 Tulsi</h2>
+    <p><strong>Scientific Name:</strong> Ocimum tenuiflorum</p>
+    <p><strong>Family:</strong> Lamiaceae</p>
+    <p><strong>Uses:</strong> Traditionally used in herbal preparations and Ayurveda.</p>
+    <p><strong>Part Used:</strong> Leaves</p>
+  </div>
+
+  <!-- Aloe Vera -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqWWFmERQ-BoynN0SvTPpdnMkM4oFTCcXDKirjHJfXCg&s=10" alt="Aloe Vera">
+
+    <h2>🌵 Aloe Vera</h2>
+    <p><strong>Scientific Name:</strong> Aloe vera</p>
+    <p><strong>Family:</strong> Asphodelaceae</p>
+    <p><strong>Uses:</strong> Traditionally used in skin-care and herbal preparations.</p>
+    <p><strong>Part Used:</strong> Leaf gel</p>
+  </div>
+
+  <!-- Amla -->
+  <div class="card">
+    <img src="https://naturessoulshop.com/cdn/shop/files/Amla-Gooseberry-Bangalore-_E2_80_93-Rich-In-Vitamin-C-Dietary-Fiber-Calcium-Iron-And-Antioxidants.jpg?v=1743193440" alt="Amla">
+
+    <h2>🍈 Amla</h2>
+    <p><strong>Scientific Name:</strong> Phyllanthus emblica</p>
+    <p><strong>Family:</strong> Phyllanthaceae</p>
+    <p><strong>Uses:</strong> Traditionally used in Ayurveda and herbal preparations.</p>
+    <p><strong>Part Used:</strong> Fruit</p>
+  </div>
+
+  <!-- Ashwagandha -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzIlfAipAgBKQN8-dL0e6hRSE55wyD_pTButfUc1iat0KNGhwObxDEWfd-&s=10" alt="Ashwagandha">
+
+    <h2>🌿 Ashwagandha</h2>
+    <p><strong>Scientific Name:</strong> Withania somnifera</p>
+    <p><strong>Family:</strong> Solanaceae</p>
+    <p><strong>Uses:</strong> Traditionally used in Ayurvedic herbal preparations.</p>
+    <p><strong>Part Used:</strong> Root</p>
+  </div>
+
+</div>
+    </div>
+
+  </div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
+           
+            <script src="index.js"></script>
+            </body>
+            </html>
+
+
+            
+
+
