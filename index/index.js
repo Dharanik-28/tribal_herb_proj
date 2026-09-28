@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(input)input.addEventListener('keydown',e=>{if(e.key==='Enter')searchPlants()});
 });
 // PUT YOUR PERENUAL API KEY HERE
-  const API_KEY = "sk-Mfih6ab760ac517d320025";
+  const API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxx";
 
   async function searchPlant() {
 
